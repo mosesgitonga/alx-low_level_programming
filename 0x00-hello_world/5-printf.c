@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- *Description:main - with proper
+ *Description:main -prints with propeiith proper
  *  grammar, but the outcome is a piece of art,
  *  Return: Always 0 (success)
  */
