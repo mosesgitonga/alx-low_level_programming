@@ -1,10 +1,8 @@
 #include <stdio.h>
 /*
- *Description:main -prints with propeiith proper
- *  grammar, but the outcome is a piece of art,
- *  Return: Always 0 (success)
+ * main - A program that prints a line using printf function
+ * Return:0  (success)
  */
-
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
