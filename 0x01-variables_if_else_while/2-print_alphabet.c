@@ -1,21 +1,22 @@
-#include <stdi.h>
-/**
- * main - Entry point
- *
- * Description: Program that prints the alphabet in lowercase
- *
- * Return: 0 (success)
- */
+#include <stdio.h>
+
+ /*
+  * main - Entry point
+  *
+  * Description: Program tha prints alphabet in lowercase
+  *
+  * Return: 0 (success)
+  */
 int main(void)
 {
 	char a;
 
-	for (a = 'a', a <= 'z', a++)
+	for (a = 'a', a <= 0, a++);
 	{
 		putchar(a);
 	}
 
-	putchar('\n');
+	putchar(\n);
 
 	return (0);
 }
