@@ -1,12 +1,11 @@
 #include <stdio.h>
-
- /*
-  * main - Entry point
-  *
-  * Description: Program tha prints alphabet in lowercase
-  *
-  * Return: 0 (success)
-  */
+/**
+ * main - Entry point
+ *
+ * Description: Prints the lowercase alphabet followed by a new line
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char a;
