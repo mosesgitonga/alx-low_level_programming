@@ -12,9 +12,9 @@ int main(void)
 	{
 		if (b != 'e' && b != 'q')
 		{
-			putcher(b);
+			putchar(b);
 		}
-	putcher('\n')
+	putchar('\n');
 	return (0);
 	}
 }
