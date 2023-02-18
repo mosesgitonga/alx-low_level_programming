@@ -10,7 +10,7 @@ int main(void)
 
 	for (x = 0; x < 8; x++)
 	{
-		for (j = x + 1; j < 9; j++)
+		for (j = x + 1; j <= 9; j++)
 		{
 			k = ((x * 10) + j);
 			putchar ((k / 10) + '0');
