@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - checks if lower or 
+ * _isalpha - checks if lower or
  * uppercase
  *
  * @c: now is defined
