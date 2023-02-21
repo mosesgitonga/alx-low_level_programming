@@ -1,0 +1,22 @@
+#include "main.h"
+/**
+ * int _islower(int c) - Entry point 
+ *
+ * Return: 0
+ */
+int _islower(int c)
+{
+	
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		if (c <= 'z')
+		{
+			return (1);
+		}
+		else
+		{
+			return (0);
+		}
+	}
+}
