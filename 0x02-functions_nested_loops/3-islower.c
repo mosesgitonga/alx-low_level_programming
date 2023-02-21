@@ -2,7 +2,7 @@
 /**
  * int _islower(int c) - Entry point
  *
- * Return: 0
+ * Return: Always 0 (succes)
  */
 int _islower(int c)
 {
