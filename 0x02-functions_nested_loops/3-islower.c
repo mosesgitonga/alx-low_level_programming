@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * _islower(int c) - Entry point
+ * _islower - Entry point
+ * @c: c character
+ *
  *
  * Return: Always 0 (succes)
  */
