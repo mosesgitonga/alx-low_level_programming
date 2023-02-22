@@ -27,6 +27,10 @@ void print_to_98(int n)
 			_putchar ((x % 10) + 'n');
 
 		}
+		else if (x < 10)
+		{
+			_putchar ((x));
+		}
 		else if (x <= 99)
 		{
 			_putchar ((x / 10) + '0');
