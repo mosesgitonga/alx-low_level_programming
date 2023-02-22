@@ -12,7 +12,20 @@ void print_to_98(int n)
 	{
 		if (x < 0)
 		{
-			_putchar ('x');
+			_putchar (x);
+		}
+		else if (x < -9)
+		{
+			_putchar ('-');
+			_putchar ((x /10) + '0');
+			_putchar ((x %10) + '0');
+		}
+		else if ( x < -99)
+		{
+			_putchar ((x /100) + '0');
+			_putchar ((((x /10) % 10) + '0'));
+			_putchar ((x % 10) + 'n');
+
 		}
 		else if (x <= 99)
 		{
