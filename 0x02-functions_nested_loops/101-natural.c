@@ -26,7 +26,7 @@ int main(void)
 {
 	int result;
 
-	result = multiples(9);
+	result = multiples(1023);
 	printf("%d\n", result);
 	return (0);
 }
