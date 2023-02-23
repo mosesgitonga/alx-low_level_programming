@@ -19,12 +19,12 @@ void print_square(int size)
 			if (j != size)
 			{
 				_putchar('#');
-				
+
 			}
 			else
 			{
 				_putchar('\n');
-			
+
 			}
 
 
