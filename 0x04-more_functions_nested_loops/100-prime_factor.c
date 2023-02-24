@@ -14,7 +14,7 @@ int factors(long int n)
 	{
 		while (n % i == 0)
 		{
-			printf("%ld", i);
+			printf("%ld,", i);
 			n = n / i;
 		}
 	}
