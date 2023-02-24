@@ -5,22 +5,22 @@
  * @n: var
  * Return: 0
  */
-int factors(int n)
+int factors(long int n)
 {
-	int i;
+	long int i;
 
 
 	for (i = 2; i <= n; i++)
 	{
 		while (n % i == 0)
 		{
-			printf("%d", i);
+			printf("%ld", i);
 			n = n / i;
 		}
 	}
 	printf("\n");
 	return (0);
-
+	
 
 }
 /**
@@ -31,9 +31,9 @@ int factors(int n)
 int main(void)
 {
 
-	int result;
 
-	result = factors(1231952);
-	printf("%d", result);
+
+	factors(612852475143L);
+	
 	return (0);
 }
