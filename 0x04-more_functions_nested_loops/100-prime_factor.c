@@ -20,7 +20,7 @@ int factors(long int n)
 	}
 	printf("\n");
 	return (0);
-	
+
 
 }
 /**
@@ -34,6 +34,6 @@ int main(void)
 
 
 	factors(612852475143L);
-	
+
 	return (0);
 }
