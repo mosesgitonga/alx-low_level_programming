@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * _puts - prints string with a new line
- * @str: pointer 
+ * @str: pointer
  */
 void _puts(char *str)
 {
