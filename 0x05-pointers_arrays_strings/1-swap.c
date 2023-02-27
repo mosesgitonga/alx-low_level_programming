@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * swap_int - swaps a and b
- * @a:pointer a 
+ * @a:pointer a
  *
  * @b:pointer b
  */
