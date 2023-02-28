@@ -1,21 +1,21 @@
-#include <stdio.h>
 #include "main.h"
-#include <string.h>
 /**
- * print_rev - reverse a sentence
- * @s: var
+ * print_rev - printing reverse of a string
+ * @s: string s
  */
+
 void print_rev(char *s)
 {
-	int length = strlen(s);
-	int middle = length / 2;
-	int temp;
 	int i;
+	
 
-	for (i = 0; i < middle; i++)
+	while (s[i] != '\0')
 	{
-		temp = s[i];
-		s[i]  = s[length -i - 1];
-		s[length -i - 1] = temp;
+		i++;
 	}
+	for (i = i -1; i >= 0; i--)
+	{
+		_putchar(s[i]);
+	}
+	_putchar('\n');
 }
