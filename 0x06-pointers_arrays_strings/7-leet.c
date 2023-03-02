@@ -2,9 +2,14 @@
 #include "main.h"
 #include <string.h>
 #include <unistd.h>
+/**
+ * leet - 1337
+ * @str: srrayof strings
+ * Return: str
+ */
 char *leet(char *str)
 {
-	int i,j;
+	int i, j;
 
 	char leetlet[] = "AaEeoOtTlL";
 	char leetnum[] = "4433007711";
