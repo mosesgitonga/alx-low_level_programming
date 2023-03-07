@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include  "main.h"
+#include <stdlib.h>
 /**
  * print_diagsums - add diagonals
  * @a: array
@@ -18,5 +19,8 @@ void print_diagsums(int *a, int size)
 	{
 		sum2 += a[j];
 	}
-	printf("%d, %d\n", sum1, sum2);
+	_putchar(sum1 + '0');
+	_putchar(',');
+	_putchar(' ');
+	_putchar(sum2 + '0');
 }
