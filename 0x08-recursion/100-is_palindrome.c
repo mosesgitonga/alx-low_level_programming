@@ -2,34 +2,43 @@
 #include  <string.h>
 #include "main.h"
 /**
- * is_palindrome - function that returns 1 if a string is a palindrome and 0
- * @n: num
- * @i: num
- * Return: something
+ * helper - helps func is_palindrome
+ * @n: string pointer
+ * @start: starting of iteration
+ * @end: endpoint
+ * Return: 1 or 0
  */
-int helper(int n, int i);
 
-int is_palindrome(char *s)
+int helper(char *n, int start, int end)
 {
-return (helper(s, i));
+	if (start >= end)
+	{
+		return (1);
+	}
+	if ((n[start]) == (n[end]))
+	{
+		return (helper(n, start + 1, end - 1));
+	}
+	else
+	{
+		return (0);
+	}
+
 }
 /**
- *helper - helps is_palindrome
- *@s: num
- *@i: num
- *Return: something
+ * is_palindrome - f:nction that returns 1 if a string is a palindrome and 0
+ * @s: string
+ * Return: some
  */
-int helper(int *s, int i)
+int is_palindrome(char *s)
 {
-	int len = strlen(s);
+	int len;
 
-	if (len == 0 || len == 1)
+	len = strlen(s);
+
+	if (len == 0)
 	{
-	return (1);
-	{
-	if ((s[0]) == (s[len - 1]))
-	{
-	return (is_palindrome((s + 1) && len - 2));
+		return (1);
 	}
-	return (0);
+	return (helper(s, 0, len - 1));
 }
