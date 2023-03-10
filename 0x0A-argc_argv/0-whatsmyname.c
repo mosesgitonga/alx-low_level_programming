@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdio.h>
-int main(int argc,char **argv)
+/**
+ * main - program to print first argument
+ * @argc:something to prevent error
+ * @argv:vector to print
+ * Return: 0
+ */
+int main(int argc, char **argv)
 {
 	if (argc == 3)
 	{
