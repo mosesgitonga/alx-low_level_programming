@@ -17,13 +17,11 @@ void print_all(const char * const format, ...)
 
 	va_start(arg, format);
 	i = 0;
-
 	while (format && format[i])
 	{
 		space = " ";
 		if (format[i + 1])
 			space = ", ";
-
 		switch (format[i])
 		{
 			case 'c':
