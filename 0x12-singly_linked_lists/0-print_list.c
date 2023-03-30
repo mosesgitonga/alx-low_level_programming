@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "lists.h"
-
+/**
+ * print_list - printing list
+ * @h: head
+ * Return:count
+ */
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
