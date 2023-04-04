@@ -25,4 +25,20 @@ listint_t *add_nodeint_end(listint_t **head, const int n);
 int pop_listint(listint_t **head);
 listint_t *add_nodeint(listint_t **head, const int n);
 void free_listint(listint_t *head);
+
+
+
+
+
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+
+
+
+
+
+
+
+
+
+
 #endif
