@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-
+int clear_bit(unsigned long int *n, unsigned int index);
 
 int get_bit(unsigned long int n, unsigned int index);
 
