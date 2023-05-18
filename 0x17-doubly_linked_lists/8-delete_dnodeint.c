@@ -1,5 +1,10 @@
 #include "lists.h"
-
+/**
+ * delete_dnodeint_at_index - delteing index
+ * @head: head if list
+ * @index: index
+ * Return: freed
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *tmp;
@@ -18,12 +23,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	count = 0;
 	tmp = *head;
-	while (tmp != NULL && count < index) 
+	while (tmp != NULL && count < index)
 	{
 		tmp = tmp->next;
 		count++;
 	}
-	
+
 	tmp->prev->next = tmp->next;
 	if (tmp->next != NULL)
 	{
