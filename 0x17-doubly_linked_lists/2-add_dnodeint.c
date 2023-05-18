@@ -1,0 +1,29 @@
+#include "lists.h"
+/**
+ * add_dnodeint - adding node at the beginning
+ * @head: head of the lkist
+ * @n: vlaue at the node
+ * Return: curr
+ */
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+{
+	dlistint_t *curr = (dlistint_t *)malloc(sizeof(dlistint_t));
+
+	curr->n = n;
+	curr->prev = NULL;
+	curr->next = *head;
+	if (curr == NULL)
+	{
+		return (NULL);
+	}
+
+
+	if (*head != NULL)
+	{
+		(*head)->prev = curr;
+
+	}
+	*head = curr;
+	return (curr);
+
+}
