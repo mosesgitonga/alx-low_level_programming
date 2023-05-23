@@ -285,4 +285,75 @@ char *_memset(char *s, char b, unsigned int n)
 {
     return memset(s, b, n);
 }
+/**
+* _isdigit - checks for a digit (0 through 9)
+* @c: int to be checked
+* Return: 1 if c is a digit, 0 otherwise
+*/
+int _isdigit(int c)
+{
+	return (c >= '0' && c <= '9');
+}
+/**
+*_strcpy - a function that copies the string pointed to by src
+* @dest: copy to
+* @src: copy from
+* Return: string
+*/
+char *_strcpy(char *dest, char *src)
+{
+	int l = 0;
+	int x = 0;
+
+	while (*(src + l) != '\0')
+	{
+		l++;
+	}
+	for ( ; x < l ; x++)
+	{
+		dest[x] = src[x];
+	}
+	dest[l] = '\0';
+	return (dest);
+}
+/**
+* _strcmp - compare string values
+* @s1: input value
+* @s2: input value
+*
+* Return: s1[i] - s2[i]
+*/
+int _strcmp(char *s1, char *s2)
+{
+	int i;
+
+	i = 0;
+
+	while (s1[i] != '\0' && s2[i] != '\0')
+	{
+		if (s1[i] != s2[i])
+		{
+			return (s1[i] - s2[i]);
+		}
+		i++;
+	}
+	return (0);
+}
+/**
+* _strchr - Entry point
+* @s: input
+* @c: input
+* Return: Always 0 (Success)
+*/
+char *_strchr(char *s, char c)
+{
+	int i = 0;
+
+	for (; s[i] >= '\0'; i++)
+	{
+		if (s[i] == c)
+			return (&s[i]);
+	}
+	return (0);
+}
 
