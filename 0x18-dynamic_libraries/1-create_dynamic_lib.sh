@@ -17,6 +17,6 @@ gcc -Wall -Wextra -Werror -pedantic -c -fPIC 3-islower.c
 gcc -Wall -Wextra -Werror -pedantic -c -fPIC 4-isalpha.c
 gcc -Wall -Wextra -Werror -pedantic -c -fPIC 6-abs.c
 gcc -Wall -Wextra -Werror -pedantic -c -fPIC 1-isdigit.c
-gcc -shared -o liball.so 0-putchar.o 2-strlen.o 2-strncpy.o 0-isupper.o 0-strcat.o 100-atoi.o 1-strncat.o 3-islower.o 4-isalpha.o 6-abs.o  5-strstr.o 4-strpbrk.o 3-strspn.o 2-strchr.o 1-memcpy.o 0-memset.o 1-isdigit.o
+gcc -shared -o liball.so -fPIC 0-putchar.o 2-strlen.o 2-strncpy.o 0-isupper.o 0-strcat.o 100-atoi.o 1-strncat.o 3-islower.o 4-isalpha.o 6-abs.o  5-strstr.o 4-strpbrk.o 3-strspn.o 2-strchr.o 1-memcpy.o 0-memset.o 1-isdigit.o
 export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
 
