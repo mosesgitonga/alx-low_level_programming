@@ -16,7 +16,7 @@ int binary_search(int *array, size_t size, int value)
     l = array[0];
     r = array[size - 1];
 
-    if (size == 0 || array == NULL)
+    if (array == NULL)
     {
         return -1;
     }
